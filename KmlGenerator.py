@@ -66,3 +66,23 @@ def main():
 
 if __name__ == "__main__":
     main()
+# output
+'''
+<?xml version="1.0" ?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+<Document>
+    <Placemark>
+        <name>test1</name>
+        <Point>
+            <coordinates>1.11,2.22,0</coordinates>
+        </Point>
+    </Placemark>
+    <Placemark>
+        <name>test2</name>
+        <Point>
+            <coordinates>3.33,4.44,0</coordinates>
+        </Point>
+    </Placemark>
+</Document>
+</kml>
+'''
