@@ -12,9 +12,9 @@ class KmlHandler(xml.sax.ContentHandler):
     def write_to_excel(self):
         wb = openpyxl.Workbook()
         ws = wb.active
-        ws.cell(1, 1).value = "Site Name"
-        ws.cell(1, 2).value = "Longtitude"
-        ws.cell(1, 3).value = "Latitude"
+        ws.cell("A1").value = "Site Name"
+        ws.cell("B1").value = "Longtitude"
+        ws.cell("C1").value = "Latitude"
         for site in self.site_list:
             ws.append(site)
         wb.save("test.xlsx")
